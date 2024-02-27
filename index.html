@@ -16,12 +16,38 @@
     <main class="container mx-auto">
         <h1 class="text-4xl font-bold text-center">Search your phone</h1>
         <section class="">
-            <input id="input-field" type="text" placeholder="Search here..." class="input input-bordered w-full max-w-xs" />
+            <input id="input-field" type="text" placeholder="Search here..."
+                class="input input-bordered w-full max-w-xs" />
             <button onclick="handleSearch()" class="btn btn-outline btn-secondary">Search</button>
         </section>
+
         <section>
+            <!-- set loading spinner -->
+            <div id="loading-spinner" class="text-center mt-40 hidden">
+                <span class="loading loading-dots loading-lg"></span>
+            </div>
             <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
             </div>
+            <!-- show all btn -->
+            <div id="showAll-container" class="hidden text-center my-8">
+                <button onclick="toggleShowALl()" class="btn btn-outline btn-success">Show All</button>
+            </div>
+        </section>
+        <!-- show details modal -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
     </main>
     <footer>
