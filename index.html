@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center">Search your phone</h1>
+        <section class="">
+            <input id="input-field" type="text" placeholder="Search here..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-outline btn-secondary">Search</button>
+        </section>
+        <section>
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <!-- js file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
