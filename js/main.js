@@ -29,7 +29,7 @@ const displayPhone = (phones, isShowAll) => {
     // console.log(phone)
     const div = document.createElement("div");
     div.innerHTML = `
-    <div class="card w-96 bg-base-100 p-4 shadow-xl">
+    <div class="card p-4 shadow-xl">
     <figure><img src="${phone.image}" alt="Shoes" /></figure>
     <div class="card-body">
       <h2 class="card-title">${phone.phone_name}</h2>
